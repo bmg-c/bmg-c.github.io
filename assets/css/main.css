@@ -111,13 +111,13 @@ input, select, textarea {
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		border-bottom: dotted 1px;
-		color: #BC2B4F;
+		color: #49bf9d;
 		text-decoration: none;
 	}
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #BC2B4F !important;
+			color: #49bf9d !important;
 			text-decoration: none;
 		}
 
@@ -1841,7 +1841,7 @@ input, select, textarea {
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #BC2B4F;
+			border-color: #49bf9d;
 		}
 
 	select {
@@ -1915,6 +1915,8 @@ input, select, textarea {
 				text-rendering: auto;
 				line-height: 1;
 				text-transform: none !important;
+				font-family: 'Font Awesome 5 Free';
+				font-weight: 900;
 			}
 
 			input[type="checkbox"] + label:before,
@@ -1939,11 +1941,12 @@ input, select, textarea {
 			background: #787878;
 			border-color: #787878;
 			color: #fff;
+			content: '\f00c';
 		}
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #BC2B4F;
+			border-color: #49bf9d;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2070,7 +2073,7 @@ input, select, textarea {
 				border-radius: 0.35em;
 				border: solid 3px rgba(255, 255, 255, 0.5);
 				color: #fff;
-				content: 'Увеличить';
+				content: 'View';
 				display: inline-block;
 				font-size: 0.8em;
 				font-weight: 400;
@@ -2461,8 +2464,8 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		input[type="button"]:hover,
 		.button:hover {
-			border-color: #782D9F;
-			color: #782D9F !important;
+			border-color: #49bf9d;
+			color: #49bf9d !important;
 		}
 
 		input[type="submit"]:active,
@@ -2470,8 +2473,8 @@ input, select, textarea {
 		input[type="button"]:active,
 		.button:active {
 			background-color: rgba(73, 191, 157, 0.1);
-			border-color: #782D9F;
-			color: #782D9F !important;
+			border-color: #49bf9d;
+			color: #49bf9d !important;
 		}
 
 		input[type="submit"].icon,
@@ -2514,8 +2517,8 @@ input, select, textarea {
 		input[type="reset"].primary,
 		input[type="button"].primary,
 		.button.primary {
-			background-color: #662db0;
-			border-color: #662db0;
+			background-color: #49bf9d;
+			border-color: #49bf9d;
 			color: #ffffff !important;
 		}
 
@@ -2523,16 +2526,16 @@ input, select, textarea {
 			input[type="reset"].primary:hover,
 			input[type="button"].primary:hover,
 			.button.primary:hover {
-				background-color: #782D9F;
-				border-color: #782D9F;
+				background-color: #5cc6a7;
+				border-color: #5cc6a7;
 			}
 
 			input[type="submit"].primary:active,
 			input[type="reset"].primary:active,
 			input[type="button"].primary:active,
 			.button.primary:active {
-				background-color: #782D9F;
-				border-color: #782D9F;
+				background-color: #3eb08f;
+				border-color: #3eb08f;
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -2588,7 +2591,7 @@ input, select, textarea {
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background-color:#782D9F;
+		background-color: #1f1815;
 		background-attachment: scroll,								scroll;
 		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
 		background-position: top left,							top left;
@@ -2672,7 +2675,7 @@ input, select, textarea {
 				padding-left: 0;
 			}
 
-			#footer .copyright li a{
+			#footer .copyright li a {
 				color: inherit;
 			}
 
@@ -3216,11 +3219,3 @@ input, select, textarea {
 			}
 
 	}
-.some-icon {
-	height: 25px;
-	width: 25px;
-	text-decoration:none;
-}
-.a-ic {
-	border-bottom: none;
-}
