@@ -1915,6 +1915,8 @@ input, select, textarea {
 				text-rendering: auto;
 				line-height: 1;
 				text-transform: none !important;
+				font-family: 'Font Awesome 5 Free';
+				font-weight: 900;
 			}
 
 			input[type="checkbox"] + label:before,
@@ -1939,6 +1941,7 @@ input, select, textarea {
 			background: #787878;
 			border-color: #787878;
 			color: #fff;
+			content: '\f00c';
 		}
 
 		input[type="checkbox"]:focus + label:before,
@@ -3216,11 +3219,3 @@ input, select, textarea {
 			}
 
 	}
-.some-icon {
-	height: 25px;
-	width: 25px;
-	text-decoration:none;
-}
-.a-ic {
-	border-bottom: none;
-}
