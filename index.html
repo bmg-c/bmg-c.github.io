@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" media="screen"/>
 	<link rel="icon" type="image/png" href="images/favicon.jpg" />
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
 </head>
 <body class="is-preload">
 
@@ -93,11 +94,11 @@
 			<h2 style="text-align: center;">Самые актуальные предложения для новых представителей:</h2>
 			<div class="row">
 				<article class="col-6 col-12-xsmall work-item">
-					<a href="images/offersForNew/1.jpg" class="image fit thumb"><img src="images/offersForNew/1.jpg" alt="" /></a>
+					<a href="images/offersForNew/1.jpg" class="image fit thumb"><img class="lozad" data-src="images/offersForNew/1.jpg" alt="Предложение для новых представителей временное" /></a>
 					<h3 style="text-align: center;">Только с 01 по 31.10.2021</h3>
 				</article>
 				<article class="col-6 col-12-xsmall work-item">
-					<a href="images/offersForNew/2.jpg" class="image fit thumb"><img src="images/offersForNew/2.jpg" alt="" /></a>
+					<a href="images/offersForNew/2.jpg" class="image fit thumb"><img class="lozad" data-src="images/offersForNew/2.jpg" alt="Предложение для новых представителей постоянное" /></a>
 					<h3 style="text-align: center;">Работает всегда</h3>
 				</article>
 			</div>
@@ -156,7 +157,7 @@
 			<h2 style="text-align: center;">Наша система дохода (маркетинг-план):</h2>
 			<div class="row">
 				<article class="col-12 col-12-xsmall work-item">
-					<a href="images/marketingPlan/1.jpg" class="image fit thumb"><img src="images/marketingPlan/1.jpg" alt="" /></a>
+					<a href="images/marketingPlan/1.jpg" class="image fit thumb"><img class="lozad" data-src="images/marketingPlan/1.jpg" alt="" /></a>
 				</article>
 			</div>
 		</section>
@@ -165,13 +166,13 @@
 			<h2 style="text-align: center;">Наша система скидок:</h2>
 			<div class="row">
 				<article class="col-12 col-12-xsmall work-item">
-					<a href="images/discount/1.jpg" class="image fit thumb"><img src="images/discount/1.jpg" alt="" /></a>
+					<a href="images/discount/1.jpg" class="image fit thumb"><img class="lozad" data-src="images/discount/1.jpg" alt="" /></a>
 				</article>
 				<article class="col-6 col-12-xsmall work-item">
-					<a href="images/discount/2.jpg" class="image fit thumb"><img src="images/discount/2.jpg" alt="" /></a>
+					<a href="images/discount/2.jpg" class="image fit thumb"><img class="lozad" data-src="images/discount/2.jpg" alt="" /></a>
 				</article>
 				<article class="col-6 col-12-xsmall work-item">
-					<a href="images/discount/3.jpg" class="image fit thumb"><img src="images/discount/3.jpg" alt="" /></a>
+					<a href="images/discount/3.jpg" class="image fit thumb"><img class="lozad" data-src="images/discount/3.jpg" alt="" /></a>
 				</article>
 			</div>
 		</section>
@@ -180,7 +181,7 @@
 			<h2 style="text-align: center;">Наша система доставки:</h2>
 			<div class="row">
 				<article class="col-12 col-12-xsmall work-item">
-					<a href="images/shipment/1.jpg" class="image fit thumb"><img src="images/shipment/1.jpg" alt="" /></a>
+					<a href="images/shipment/1.jpg" class="image fit thumb"><img class="lozad" data-src="images/shipment/1.jpg" alt=""/></a>
 				</article>
 			</div>
 		</section>
@@ -232,6 +233,10 @@
 	<script src="assets/js/util.js" defer></script>
 	<script src="assets/js/main.js" defer></script>
 	<script src="assets/js/copy.js" defer></script>
+	<script>
+		const observer = lozad();
+		observer.observe();
+	</script>
 
 </body>
 </html>
