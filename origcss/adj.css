@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.3.6,
-* Autoprefixer: v10.3.1
-* Browsers: >0.2%,last 4 versions,Firefox ESR
-*/
-
 .gradient {
 	background: -webkit-linear-gradient(#782D9F, #BC2B4F); 
 	background-clip: text; 

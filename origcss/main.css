@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.3.6,
-* Autoprefixer: v10.3.1
-* Browsers: >0.2%,last 4 versions,Firefox ESR
-*/
-
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
 
@@ -82,14 +75,12 @@ input, select, textarea {
 /* Basic */
 
 	html {
-		-webkit-box-sizing: border-box;
-		        box-sizing: border-box;
+		box-sizing: border-box;
 		scroll-behavior: smooth;
 	}
 
 	*, *:before, *:after {
-		-webkit-box-sizing: inherit;
-		        box-sizing: inherit;
+		box-sizing: inherit;
 	}
 
 	body {
@@ -97,10 +88,13 @@ input, select, textarea {
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
+			-moz-animation: none !important;
 			-webkit-animation: none !important;
+			-ms-animation: none !important;
 			animation: none !important;
+			-moz-transition: none !important;
 			-webkit-transition: none !important;
-			-o-transition: none !important;
+			-ms-transition: none !important;
 			transition: none !important;
 		}
 
@@ -113,8 +107,9 @@ input, select, textarea {
 	}
 
 	a {
+		-moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		-o-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		border-bottom: dotted 1px;
 		color: #BC2B4F;
@@ -299,21 +294,14 @@ input, select, textarea {
 /* Row */
 
 	.row {
-		display: -webkit-box;
-		display: -ms-flexbox;
 		display: flex;
-		-ms-flex-wrap: wrap;
-		    flex-wrap: wrap;
-		-webkit-box-sizing: border-box;
-		        box-sizing: border-box;
-		-webkit-box-align: stretch;
-		    -ms-flex-align: stretch;
-		        align-items: stretch;
+		flex-wrap: wrap;
+		box-sizing: border-box;
+		align-items: stretch;
 	}
 
 		.row > * {
-			-webkit-box-sizing: border-box;
-			        box-sizing: border-box;
+			box-sizing: border-box;
 		}
 
 		.row.gtr-uniform > * > :last-child {
@@ -321,45 +309,31 @@ input, select, textarea {
 		}
 
 		.row.aln-left {
-			-webkit-box-pack: start;
-			    -ms-flex-pack: start;
-			        justify-content: flex-start;
+			justify-content: flex-start;
 		}
 
 		.row.aln-center {
-			-webkit-box-pack: center;
-			    -ms-flex-pack: center;
-			        justify-content: center;
+			justify-content: center;
 		}
 
 		.row.aln-right {
-			-webkit-box-pack: end;
-			    -ms-flex-pack: end;
-			        justify-content: flex-end;
+			justify-content: flex-end;
 		}
 
 		.row.aln-top {
-			-webkit-box-align: start;
-			    -ms-flex-align: start;
-			        align-items: flex-start;
+			align-items: flex-start;
 		}
 
 		.row.aln-middle {
-			-webkit-box-align: center;
-			    -ms-flex-align: center;
-			        align-items: center;
+			align-items: center;
 		}
 
 		.row.aln-bottom {
-			-webkit-box-align: end;
-			    -ms-flex-align: end;
-			        align-items: flex-end;
+			align-items: flex-end;
 		}
 
 		.row > .imp {
-			-webkit-box-ordinal-group: 0;
-			    -ms-flex-order: -1;
-			        order: -1;
+			order: -1;
 		}
 
 		.row > .col-1 {
@@ -563,21 +537,14 @@ input, select, textarea {
 		@media screen and (max-width: 1800px) {
 
 			.row {
-				display: -webkit-box;
-				display: -ms-flexbox;
 				display: flex;
-				-ms-flex-wrap: wrap;
-				    flex-wrap: wrap;
-				-webkit-box-sizing: border-box;
-				        box-sizing: border-box;
-				-webkit-box-align: stretch;
-				    -ms-flex-align: stretch;
-				        align-items: stretch;
+				flex-wrap: wrap;
+				box-sizing: border-box;
+				align-items: stretch;
 			}
 
 				.row > * {
-					-webkit-box-sizing: border-box;
-					        box-sizing: border-box;
+					box-sizing: border-box;
 				}
 
 				.row.gtr-uniform > * > :last-child {
@@ -585,45 +552,31 @@ input, select, textarea {
 				}
 
 				.row.aln-left {
-					-webkit-box-pack: start;
-					    -ms-flex-pack: start;
-					        justify-content: flex-start;
+					justify-content: flex-start;
 				}
 
 				.row.aln-center {
-					-webkit-box-pack: center;
-					    -ms-flex-pack: center;
-					        justify-content: center;
+					justify-content: center;
 				}
 
 				.row.aln-right {
-					-webkit-box-pack: end;
-					    -ms-flex-pack: end;
-					        justify-content: flex-end;
+					justify-content: flex-end;
 				}
 
 				.row.aln-top {
-					-webkit-box-align: start;
-					    -ms-flex-align: start;
-					        align-items: flex-start;
+					align-items: flex-start;
 				}
 
 				.row.aln-middle {
-					-webkit-box-align: center;
-					    -ms-flex-align: center;
-					        align-items: center;
+					align-items: center;
 				}
 
 				.row.aln-bottom {
-					-webkit-box-align: end;
-					    -ms-flex-align: end;
-					        align-items: flex-end;
+					align-items: flex-end;
 				}
 
 				.row > .imp-xlarge {
-					-webkit-box-ordinal-group: 0;
-					    -ms-flex-order: -1;
-					        order: -1;
+					order: -1;
 				}
 
 				.row > .col-1-xlarge {
@@ -829,21 +782,14 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			.row {
-				display: -webkit-box;
-				display: -ms-flexbox;
 				display: flex;
-				-ms-flex-wrap: wrap;
-				    flex-wrap: wrap;
-				-webkit-box-sizing: border-box;
-				        box-sizing: border-box;
-				-webkit-box-align: stretch;
-				    -ms-flex-align: stretch;
-				        align-items: stretch;
+				flex-wrap: wrap;
+				box-sizing: border-box;
+				align-items: stretch;
 			}
 
 				.row > * {
-					-webkit-box-sizing: border-box;
-					        box-sizing: border-box;
+					box-sizing: border-box;
 				}
 
 				.row.gtr-uniform > * > :last-child {
@@ -851,45 +797,31 @@ input, select, textarea {
 				}
 
 				.row.aln-left {
-					-webkit-box-pack: start;
-					    -ms-flex-pack: start;
-					        justify-content: flex-start;
+					justify-content: flex-start;
 				}
 
 				.row.aln-center {
-					-webkit-box-pack: center;
-					    -ms-flex-pack: center;
-					        justify-content: center;
+					justify-content: center;
 				}
 
 				.row.aln-right {
-					-webkit-box-pack: end;
-					    -ms-flex-pack: end;
-					        justify-content: flex-end;
+					justify-content: flex-end;
 				}
 
 				.row.aln-top {
-					-webkit-box-align: start;
-					    -ms-flex-align: start;
-					        align-items: flex-start;
+					align-items: flex-start;
 				}
 
 				.row.aln-middle {
-					-webkit-box-align: center;
-					    -ms-flex-align: center;
-					        align-items: center;
+					align-items: center;
 				}
 
 				.row.aln-bottom {
-					-webkit-box-align: end;
-					    -ms-flex-align: end;
-					        align-items: flex-end;
+					align-items: flex-end;
 				}
 
 				.row > .imp-large {
-					-webkit-box-ordinal-group: 0;
-					    -ms-flex-order: -1;
-					        order: -1;
+					order: -1;
 				}
 
 				.row > .col-1-large {
@@ -1095,21 +1027,14 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			.row {
-				display: -webkit-box;
-				display: -ms-flexbox;
 				display: flex;
-				-ms-flex-wrap: wrap;
-				    flex-wrap: wrap;
-				-webkit-box-sizing: border-box;
-				        box-sizing: border-box;
-				-webkit-box-align: stretch;
-				    -ms-flex-align: stretch;
-				        align-items: stretch;
+				flex-wrap: wrap;
+				box-sizing: border-box;
+				align-items: stretch;
 			}
 
 				.row > * {
-					-webkit-box-sizing: border-box;
-					        box-sizing: border-box;
+					box-sizing: border-box;
 				}
 
 				.row.gtr-uniform > * > :last-child {
@@ -1117,45 +1042,31 @@ input, select, textarea {
 				}
 
 				.row.aln-left {
-					-webkit-box-pack: start;
-					    -ms-flex-pack: start;
-					        justify-content: flex-start;
+					justify-content: flex-start;
 				}
 
 				.row.aln-center {
-					-webkit-box-pack: center;
-					    -ms-flex-pack: center;
-					        justify-content: center;
+					justify-content: center;
 				}
 
 				.row.aln-right {
-					-webkit-box-pack: end;
-					    -ms-flex-pack: end;
-					        justify-content: flex-end;
+					justify-content: flex-end;
 				}
 
 				.row.aln-top {
-					-webkit-box-align: start;
-					    -ms-flex-align: start;
-					        align-items: flex-start;
+					align-items: flex-start;
 				}
 
 				.row.aln-middle {
-					-webkit-box-align: center;
-					    -ms-flex-align: center;
-					        align-items: center;
+					align-items: center;
 				}
 
 				.row.aln-bottom {
-					-webkit-box-align: end;
-					    -ms-flex-align: end;
-					        align-items: flex-end;
+					align-items: flex-end;
 				}
 
 				.row > .imp-medium {
-					-webkit-box-ordinal-group: 0;
-					    -ms-flex-order: -1;
-					        order: -1;
+					order: -1;
 				}
 
 				.row > .col-1-medium {
@@ -1361,21 +1272,14 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			.row {
-				display: -webkit-box;
-				display: -ms-flexbox;
 				display: flex;
-				-ms-flex-wrap: wrap;
-				    flex-wrap: wrap;
-				-webkit-box-sizing: border-box;
-				        box-sizing: border-box;
-				-webkit-box-align: stretch;
-				    -ms-flex-align: stretch;
-				        align-items: stretch;
+				flex-wrap: wrap;
+				box-sizing: border-box;
+				align-items: stretch;
 			}
 
 				.row > * {
-					-webkit-box-sizing: border-box;
-					        box-sizing: border-box;
+					box-sizing: border-box;
 				}
 
 				.row.gtr-uniform > * > :last-child {
@@ -1383,45 +1287,31 @@ input, select, textarea {
 				}
 
 				.row.aln-left {
-					-webkit-box-pack: start;
-					    -ms-flex-pack: start;
-					        justify-content: flex-start;
+					justify-content: flex-start;
 				}
 
 				.row.aln-center {
-					-webkit-box-pack: center;
-					    -ms-flex-pack: center;
-					        justify-content: center;
+					justify-content: center;
 				}
 
 				.row.aln-right {
-					-webkit-box-pack: end;
-					    -ms-flex-pack: end;
-					        justify-content: flex-end;
+					justify-content: flex-end;
 				}
 
 				.row.aln-top {
-					-webkit-box-align: start;
-					    -ms-flex-align: start;
-					        align-items: flex-start;
+					align-items: flex-start;
 				}
 
 				.row.aln-middle {
-					-webkit-box-align: center;
-					    -ms-flex-align: center;
-					        align-items: center;
+					align-items: center;
 				}
 
 				.row.aln-bottom {
-					-webkit-box-align: end;
-					    -ms-flex-align: end;
-					        align-items: flex-end;
+					align-items: flex-end;
 				}
 
 				.row > .imp-small {
-					-webkit-box-ordinal-group: 0;
-					    -ms-flex-order: -1;
-					        order: -1;
+					order: -1;
 				}
 
 				.row > .col-1-small {
@@ -1627,21 +1517,14 @@ input, select, textarea {
 		@media screen and (max-width: 480px) {
 
 			.row {
-				display: -webkit-box;
-				display: -ms-flexbox;
 				display: flex;
-				-ms-flex-wrap: wrap;
-				    flex-wrap: wrap;
-				-webkit-box-sizing: border-box;
-				        box-sizing: border-box;
-				-webkit-box-align: stretch;
-				    -ms-flex-align: stretch;
-				        align-items: stretch;
+				flex-wrap: wrap;
+				box-sizing: border-box;
+				align-items: stretch;
 			}
 
 				.row > * {
-					-webkit-box-sizing: border-box;
-					        box-sizing: border-box;
+					box-sizing: border-box;
 				}
 
 				.row.gtr-uniform > * > :last-child {
@@ -1649,45 +1532,31 @@ input, select, textarea {
 				}
 
 				.row.aln-left {
-					-webkit-box-pack: start;
-					    -ms-flex-pack: start;
-					        justify-content: flex-start;
+					justify-content: flex-start;
 				}
 
 				.row.aln-center {
-					-webkit-box-pack: center;
-					    -ms-flex-pack: center;
-					        justify-content: center;
+					justify-content: center;
 				}
 
 				.row.aln-right {
-					-webkit-box-pack: end;
-					    -ms-flex-pack: end;
-					        justify-content: flex-end;
+					justify-content: flex-end;
 				}
 
 				.row.aln-top {
-					-webkit-box-align: start;
-					    -ms-flex-align: start;
-					        align-items: flex-start;
+					align-items: flex-start;
 				}
 
 				.row.aln-middle {
-					-webkit-box-align: center;
-					    -ms-flex-align: center;
-					        align-items: center;
+					align-items: center;
 				}
 
 				.row.aln-bottom {
-					-webkit-box-align: end;
-					    -ms-flex-align: end;
-					        align-items: flex-end;
+					align-items: flex-end;
 				}
 
 				.row > .imp-xsmall {
-					-webkit-box-ordinal-group: 0;
-					    -ms-flex-order: -1;
-					        order: -1;
+					order: -1;
 				}
 
 				.row > .col-1-xsmall {
@@ -1965,8 +1834,7 @@ input, select, textarea {
 		input[type="email"]:invalid,
 		select:invalid,
 		textarea:invalid {
-			-webkit-box-shadow: none;
-			        box-shadow: none;
+			box-shadow: none;
 		}
 
 		input[type="text"]:focus,
@@ -1984,8 +1852,7 @@ input, select, textarea {
 		background-position: calc(100% - 1rem) center;
 		height: 2.75em;
 		padding-right: 2.75em;
-		-o-text-overflow: ellipsis;
-		   text-overflow: ellipsis;
+		text-overflow: ellipsis;
 	}
 
 		select option {
@@ -2179,8 +2046,9 @@ input, select, textarea {
 	}
 
 		.image:before {
+			-moz-transition: opacity 0.2s ease-in-out;
 			-webkit-transition: opacity 0.2s ease-in-out;
-			-o-transition: opacity 0.2s ease-in-out;
+			-ms-transition: opacity 0.2s ease-in-out;
 			transition: opacity 0.2s ease-in-out;
 			background: url("images/overlay.png");
 			border-radius: 0.35em;
@@ -2199,8 +2067,9 @@ input, select, textarea {
 		}
 
 			.image.thumb:after {
+				-moz-transition: opacity 0.2s ease-in-out;
 				-webkit-transition: opacity 0.2s ease-in-out;
-				-o-transition: opacity 0.2s ease-in-out;
+				-ms-transition: opacity 0.2s ease-in-out;
 				transition: opacity 0.2s ease-in-out;
 				border-radius: 0.35em;
 				border: solid 3px rgba(255, 255, 255, 0.5);
@@ -2375,9 +2244,8 @@ input, select, textarea {
 
 	ul.actions {
 		display: -moz-flex;
+		display: -webkit-flex;
 		display: -ms-flex;
-		display: -webkit-box;
-		display: -ms-flexbox;
 		display: flex;
 		cursor: default;
 		list-style: none;
@@ -2392,10 +2260,9 @@ input, select, textarea {
 
 		ul.actions.special {
 			-moz-justify-content: center;
+			-webkit-justify-content: center;
 			-ms-justify-content: center;
-			-webkit-box-pack: center;
-			    -ms-flex-pack: center;
-			        justify-content: center;
+			justify-content: center;
 			width: 100%;
 			margin-left: 0;
 		}
@@ -2406,10 +2273,9 @@ input, select, textarea {
 
 		ul.actions.stacked {
 			-moz-flex-direction: column;
+			-webkit-flex-direction: column;
 			-ms-flex-direction: column;
-			-webkit-box-orient: vertical;
-			-webkit-box-direction: normal;
-			        flex-direction: column;
+			flex-direction: column;
 			margin-left: 0;
 		}
 
@@ -2427,13 +2293,13 @@ input, select, textarea {
 
 			ul.actions.fit li {
 				-moz-flex-grow: 1;
+				-webkit-flex-grow: 1;
 				-ms-flex-grow: 1;
-				-webkit-box-flex: 1;
-				    -ms-flex-positive: 1;
-				        flex-grow: 1;
+				flex-grow: 1;
+				-moz-flex-shrink: 1;
+				-webkit-flex-shrink: 1;
 				-ms-flex-shrink: 1;
-				-ms-flex-negative: 1;
-				    flex-shrink: 1;
+				flex-shrink: 1;
 				width: 100%;
 			}
 
@@ -2449,23 +2315,22 @@ input, select, textarea {
 
 			ul.actions:not(.fixed) {
 				-moz-flex-direction: column;
+				-webkit-flex-direction: column;
 				-ms-flex-direction: column;
-				-webkit-box-orient: vertical;
-				-webkit-box-direction: normal;
-				        flex-direction: column;
+				flex-direction: column;
 				margin-left: 0;
 				width: 100% !important;
 			}
 
 				ul.actions:not(.fixed) li {
 					-moz-flex-grow: 1;
+					-webkit-flex-grow: 1;
 					-ms-flex-grow: 1;
-					-webkit-box-flex: 1;
-					    -ms-flex-positive: 1;
-					        flex-grow: 1;
+					flex-grow: 1;
+					-moz-flex-shrink: 1;
+					-webkit-flex-shrink: 1;
 					-ms-flex-shrink: 1;
-					-ms-flex-negative: 1;
-					    flex-shrink: 1;
+					flex-shrink: 1;
 					padding: 1em 0 0 0;
 					text-align: center;
 					width: 100%;
@@ -2575,8 +2440,9 @@ input, select, textarea {
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
+		-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		-o-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		background-color: transparent;
 		border-radius: 0.35em;
@@ -2711,25 +2577,21 @@ input, select, textarea {
 
 	#header {
 		display: -moz-flex;
+		display: -webkit-flex;
 		display: -ms-flex;
-		display: -webkit-box;
-		display: -ms-flexbox;
 		display: flex;
 		-moz-flex-direction: column;
+		-webkit-flex-direction: column;
 		-ms-flex-direction: column;
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		        flex-direction: column;
+		flex-direction: column;
 		-moz-align-items: -moz-flex-end;
+		-webkit-align-items: -webkit-flex-end;
 		-ms-align-items: -ms-flex-end;
-		-webkit-box-align: end;
-		    -ms-flex-align: end;
-		        align-items: flex-end;
+		align-items: flex-end;
 		-moz-justify-content: space-between;
+		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
-		-webkit-box-pack: justify;
-		    -ms-flex-pack: justify;
-		        justify-content: space-between;
+		justify-content: space-between;
 		background-color:#782D9F;
 		background-attachment: scroll,								scroll;
 		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
@@ -2747,18 +2609,18 @@ input, select, textarea {
 	}
 
 		#header > * {
+			-moz-flex-shrink: 0;
+			-webkit-flex-shrink: 0;
 			-ms-flex-shrink: 0;
-			-ms-flex-negative: 0;
-			    flex-shrink: 0;
+			flex-shrink: 0;
 			width: 100%;
 		}
 
 		#header > .inner {
 			-moz-flex-grow: 1;
+			-webkit-flex-grow: 1;
 			-ms-flex-grow: 1;
-			-webkit-box-flex: 1;
-			    -ms-flex-positive: 1;
-			        flex-grow: 1;
+			flex-grow: 1;
 			margin: 0 0 2em 0;
 		}
 
@@ -2841,14 +2703,48 @@ input, select, textarea {
 
 /* Poptrox */
 
-	@-webkit-keyframes spin {
+	@-moz-keyframes spin {
 		0% {
+			-moz-transform: rotate(0deg);
 			-webkit-transform: rotate(0deg);
 			-ms-transform: rotate(0deg);
 			transform: rotate(0deg);
 		}
 
 		100% {
+			-moz-transform: rotate(360deg);
+			-webkit-transform: rotate(360deg);
+			-ms-transform: rotate(360deg);
+			transform: rotate(360deg);
+		}
+	}
+
+	@-webkit-keyframes spin {
+		0% {
+			-moz-transform: rotate(0deg);
+			-webkit-transform: rotate(0deg);
+			-ms-transform: rotate(0deg);
+			transform: rotate(0deg);
+		}
+
+		100% {
+			-moz-transform: rotate(360deg);
+			-webkit-transform: rotate(360deg);
+			-ms-transform: rotate(360deg);
+			transform: rotate(360deg);
+		}
+	}
+
+	@-ms-keyframes spin {
+		0% {
+			-moz-transform: rotate(0deg);
+			-webkit-transform: rotate(0deg);
+			-ms-transform: rotate(0deg);
+			transform: rotate(0deg);
+		}
+
+		100% {
+			-moz-transform: rotate(360deg);
 			-webkit-transform: rotate(360deg);
 			-ms-transform: rotate(360deg);
 			transform: rotate(360deg);
@@ -2857,12 +2753,14 @@ input, select, textarea {
 
 	@keyframes spin {
 		0% {
+			-moz-transform: rotate(0deg);
 			-webkit-transform: rotate(0deg);
 			-ms-transform: rotate(0deg);
 			transform: rotate(0deg);
 		}
 
 		100% {
+			-moz-transform: rotate(360deg);
 			-webkit-transform: rotate(360deg);
 			-ms-transform: rotate(360deg);
 			transform: rotate(360deg);
@@ -2870,21 +2768,23 @@ input, select, textarea {
 	}
 
 	.poptrox-popup {
+		-moz-box-sizing: content-box;
 		-webkit-box-sizing: content-box;
 		-ms-box-sizing: content-box;
 		box-sizing: content-box;
 		-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 		background: #fff;
 		border-radius: 0.35em;
-		-webkit-box-shadow: 0 0.1em 0.15em 0 rgba(0, 0, 0, 0.15);
-		        box-shadow: 0 0.1em 0.15em 0 rgba(0, 0, 0, 0.15);
+		box-shadow: 0 0.1em 0.15em 0 rgba(0, 0, 0, 0.15);
 		overflow: hidden;
 		padding-bottom: 3em;
 	}
 
 		.poptrox-popup .loader {
 			text-decoration: none;
+			-moz-animation: spin 1s linear infinite;
 			-webkit-animation: spin 1s linear infinite;
+			-ms-animation: spin 1s linear infinite;
 			animation: spin 1s linear infinite;
 			font-size: 1.5em;
 			height: 1em;
@@ -2930,8 +2830,9 @@ input, select, textarea {
 		.poptrox-popup .nav-next,
 		.poptrox-popup .nav-previous {
 			text-decoration: none;
+			-moz-transition: opacity 0.2s ease-in-out;
 			-webkit-transition: opacity 0.2s ease-in-out;
-			-o-transition: opacity 0.2s ease-in-out;
+			-ms-transition: opacity 0.2s ease-in-out;
 			transition: opacity 0.2s ease-in-out;
 			-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 			background: rgba(0, 0, 0, 0.01);
@@ -2990,8 +2891,9 @@ input, select, textarea {
 
 		.poptrox-popup .closer {
 			text-decoration: none;
+			-moz-transition: opacity 0.2s ease-in-out;
 			-webkit-transition: opacity 0.2s ease-in-out;
-			-o-transition: opacity 0.2s ease-in-out;
+			-ms-transition: opacity 0.2s ease-in-out;
 			transition: opacity 0.2s ease-in-out;
 			-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 			color: #fff;
@@ -3020,6 +2922,7 @@ input, select, textarea {
 			}
 
 			.poptrox-popup .closer:before {
+				-moz-box-sizing: content-box;
 				-webkit-box-sizing: content-box;
 				-ms-box-sizing: content-box;
 				box-sizing: content-box;
